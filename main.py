@@ -1,7 +1,12 @@
 import urllib.request
 
+# read a url
 url = input("Put web url here:")
 print(url)
 
+# get a response
 response = urllib.request.urlopen(url)
-print(response.read())
+html = response.read()
+
+
+# parse the response
